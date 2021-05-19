@@ -19,8 +19,8 @@ import paho.mqtt.client as mqtt
 class serverConf:
   MQTTServer     = '127.0.0.1'
   MQTTPort       = '1883'
-  MQTTUser       = 'MyHomeJoMerMQTT'
-  MQTTPassword   = 'EvaySara2513mq'
+  MQTTUser       = 'MQTTUSER'
+  MQTTPassword   = 'MQTTPASS'
 # If there is a '|' character is because there is a field within an array similar to {"field1":value1, "field2", "value2", ...}
 # Typical of fields used in Tasmota for e.g. power:
 # Topic: gBridge/u1/tele/sonoff-1487/SENSOR
@@ -36,8 +36,8 @@ def initConfig(filename):
   config = configparser.ConfigParser()
   config['SERVER'] = {'MQTTServer': '127.0.0.1',
                       'MQTTPort': '1883',
-                      'MQTTUser': 'MyHomeJoMerMQTT',
-                      'MQTTPassword': 'EvaySara2513mq',
+                      'MQTTUser': 'MQTTUSER',
+                      'MQTTPassword': 'MQTTPASS',
                       'debug': '1'}
 
   with open(filename, 'w') as configfile:

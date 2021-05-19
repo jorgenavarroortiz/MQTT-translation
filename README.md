@@ -8,7 +8,7 @@ This may be useful to adapt to some platforms/programs, such as e.g. https://git
 
 **Same broker to subscribe and publish messages**
 
-The ``config_1broker.ini`` file contains the credentials for the MQTT broker. You can specify a different file using the ``--config`` parameter. The examples include MQTT translations for a Tasmota node with a power clamp (``mqtt_translation_power.py``), for a Tasmota node with a temperature (DHT11) sensor (``mqtt_translation_tasmota_temperature.py``), and for an RTL433 to MQTT gateway (``mqtt_translation_rtl433_temperature.py``) (see https://github.com/mverleun/RTL433-to-mqtt). The Tasmota examples are particularly interesting since they include decoding as JSON the original MQTT messages.
+The ``config_1broker.ini`` file contains the credentials for the MQTT broker. By default, the scripts will search for a ``config.ini`` file and will generate one if not found. You can specify a specific file using the ``--config`` parameter. The examples include MQTT translations for a Tasmota node with a power clamp (``mqtt_translation_power.py``), for a Tasmota node with a temperature (DHT11) sensor (``mqtt_translation_tasmota_temperature.py``), and for an RTL433 to MQTT gateway (``mqtt_translation_rtl433_temperature.py``) (see https://github.com/mverleun/RTL433-to-mqtt). The Tasmota examples are particularly interesting since they include decoding as JSON the original MQTT messages.
 
 **Example using a Tasmota node with a temperature sensor**
 

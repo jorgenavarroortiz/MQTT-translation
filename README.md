@@ -2,7 +2,7 @@
 
 © Jorge Navarro-Ortiz (jorgenavarro@ugr.es), University of Granada
 
-Python scripts that subscribe to specific MQTT topics, modify the content of the messages (e.g. format change) and publish the messages to different topics.
+Python scripts that subscribe to specific MQTT topics, modify the content of the messages (e.g. format change) and publish the messages to different topics. Python3 is required.
 
 This may be useful to adapt to some platforms/programs, such as e.g. https://github.com/Nilhcem/home-monitoring-grafana which utilizes a specific MQTT topic format (``home/{peripheralName}/{temperature|humidity|battery|status}``) for the bridge between MQTT and InfluxDB. Similarly, it may be useful to process the content of the message, e.g. get several measurement values sent in the same topic and publish them to separate topics (e.g. one topic for temperature, another for humidity, ...).
 

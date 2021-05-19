@@ -19,8 +19,8 @@ import paho.mqtt.client as mqtt
 class serverConf:
   MQTTServer     = '127.0.0.1'
   MQTTPort       = '1883'
-  MQTTUser       = 'MyHomeJoMerMQTT'
-  MQTTPassword   = 'EvaySara2513mq'
+  MQTTUser       = 'MQTTUSER'
+  MQTTPassword   = 'MQTTPASS'
   debug          = 1
 
 serverConfigOptions = serverConf()
@@ -31,8 +31,8 @@ def initConfig(filename):
   config = configparser.ConfigParser()
   config['SERVER'] = {'MQTTServer': '127.0.0.1',
                       'MQTTPort': '1883',
-                      'MQTTUser': 'MyHomeJoMerMQTT',
-                      'MQTTPassword': 'EvaySara2513mq',
+                      'MQTTUser': 'MQTTUSER',
+                      'MQTTPassword': 'MQTTPASS',
                       'debug': '1'}
 
   with open(filename, 'w') as configfile:

@@ -16,7 +16,7 @@ The ``config_1broker.ini`` file contains the credentials for the MQTT broker. By
 
 ## Different broker to subscribe and publish messages
 
-The ``config_2brokers.ini`` file contains the credentials for two MQTT brokers. The first one is used to subscribe to a specific topic, and the second one is used to publish the processed data to the "translation" topic. The example subscribes to the MQTT broker from a LoRaWAN network, translating the topic and publishing 4 different data (light, temperature, humidity and barometric pressure) to a second MQTT broker. This broker is, in turn, connected to a InfluxDB database whose data are used in a Grafana dashboard.
+The ``config_2brokers.ini`` file contains the credentials for two MQTT brokers. The first one is used to subscribe to a specific topic, and the second one is used to publish the processed data to the "translation" topic. The example (``mqtt_translation_pysense_measurements.py``) subscribes to the MQTT broker from a LoRaWAN network, translating the topic and processing one string to publish 4 different data (light, temperature, humidity and barometric pressure) to a second MQTT broker. This broker is, in turn, connected to a InfluxDB database whose data are used in a Grafana dashboard.
 
 **Example using a FiPy node with a Pysense expansion board, taking data (over MQTT) from a LoRaWAN application server and sending its translation to a different MQTT broker**
 

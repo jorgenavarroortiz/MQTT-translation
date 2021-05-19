@@ -9,3 +9,7 @@ This may be useful to adapt to some platforms/programs, such as e.g. https://git
 The ``config.ini`` file contains the credentials for the MQTT broker. The examples include MQTT translations for a Tasmota node with a power clamp, for a Tasmota node with a temperature (DHT11) sensor, and for an RTL433 to MQTT gateway (see https://github.com/mverleun/RTL433-to-mqtt). The Tasmota examples are particularly interesting since they include decoding as JSON the original MQTT messages.
 
 If you require these scripts to be run from startup (e.g. in a Raspberry Pi), you can use ``crontab``.
+
+**Example using a Tasmota node with a temperature sensor**
+
+<img src="https://github.com/jorgenavarroortiz/MQTT-translation/raw/main/img/mqtt-translation-tasmota-temperature.png" width="800">
